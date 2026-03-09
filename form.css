@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(300deg, #96c21e, #00a7d1, #bcd008);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+table {
+  border-width: 5px;
+  border-color: rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  color: black;
+  box-shadow: 0 0 10px white,
+    0 0 10px white,
+    0 0 10px white,
+    0 0 10px white;
+  box-shadow: 0 0 10px white,
+    0 0 10px white,
+    0 0 10px white,
+    0 0 10px white;
+
+}
+
+td {
+  align-items: center;
+  font-size: 26px;
+  padding: 30px;
+  width: 400px;
+}
+#text{
+  padding: 0px;
+}
+
+#button ,input[type="file"]::file-selector-button{
+  width: 20%;
+  margin-top: 15px;
+  padding: 10px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+
+  cursor: pointer;
+  
+}
+input[type="file"]::file-selector-button{
+  margin-top: 0px;
+   backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  padding: 10px;
+  width: 50%;
+}
+
+#button:hover,input[type="file"]::file-selector-button:hover {
+  transform: scale(0.95);
+}
+
+
+.inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  width: 100%;
+  height: 36px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  color: black;
+  outline: none;
+  font-size: 18px;
+}
+textarea{
+  resize: none;
+  width: 100%;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

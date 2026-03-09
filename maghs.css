@@ -1,0 +1,57 @@
+body {
+
+  background: linear-gradient(300deg,#c21e65,#d100d1,#023e7d);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+align-content: center;
+    justify-content: center;
+}
+
+button {
+    margin-left: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 15px;
+    height: 50px;
+    width: 250px;
+    border-width: 1px;
+    border-color: aliceblue;
+    background-color: #F25EDE;
+    box-shadow: 0 0 10px white,
+        0 0 10px white,
+        0 0 10px white,
+        0 0 10px white;
+}
+button:hover{
+
+    background: linear-gradient(30deg,#1e73c2,#00d16c,#02777d);
+  background-size: 180% 180%;
+  animation: gradient-animation 4s ease infinite;
+     box-shadow: 0 0 10px #a23ae3,
+        0 0 10px #a23ae3,
+        0 0 10px #a23ae3,
+        0 0 10px #a23ae3;
+}
+img {
+    max-height: 500px;
+    max-width: 500px;
+    size: cover;
+    object-fit: cover;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
