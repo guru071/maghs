@@ -1,57 +1,125 @@
+/* RESET */
+
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+
+/* BODY BACKGROUND */
+
 body {
 
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
   background: linear-gradient(300deg,#c21e65,#d100d1,#023e7d);
-  background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
-align-content: center;
-    justify-content: center;
+  background-size:180% 180%;
+  animation: gradient-animation 4s ease infinite;
+
+  font-family: Arial, sans-serif;
 }
+
+
+/* IMAGE */
+
+img {
+
+  max-width:500px;
+  width:90%;
+  height:auto;
+
+  object-fit:cover;
+
+  margin-bottom:30px;
+
+}
+
+
+/* BUTTON */
 
 button {
-    margin-left: 50px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 25px;
-    border-radius: 15px;
-    height: 50px;
-    width: 250px;
-    border-width: 1px;
-    border-color: aliceblue;
-    background-color: #F25EDE;
-    box-shadow: 0 0 10px white,
-        0 0 10px white,
-        0 0 10px white,
-        0 0 10px white;
+
+  font-size:25px;
+
+  border-radius:15px;
+
+  height:55px;
+  width:250px;
+
+  margin-left: 50px;
+  border:1px solid aliceblue;
+
+  background-color:#F25EDE;
+
+  cursor:pointer;
+
+  box-shadow:
+  0 0 10px white,
+  0 0 10px white,
+  0 0 10px white,
+  0 0 10px white;
+
+  transition:0.3s;
+
 }
+
+
+/* BUTTON HOVER */
+
 button:hover{
 
-    background: linear-gradient(30deg,#1e73c2,#00d16c,#02777d);
-  background-size: 180% 180%;
+  background: linear-gradient(30deg,#1e73c2,#00d16c,#02777d);
+  background-size:180% 180%;
   animation: gradient-animation 4s ease infinite;
-     box-shadow: 0 0 10px #a23ae3,
-        0 0 10px #a23ae3,
-        0 0 10px #a23ae3,
-        0 0 10px #a23ae3;
-}
-img {
-    max-height: 500px;
-    max-width: 500px;
-    size: cover;
-    object-fit: cover;
-    align-items: center;
-    align-self: center;
-    align-content: center;
+
+  box-shadow:
+  0 0 10px #a23ae3,
+  0 0 10px #a23ae3,
+  0 0 10px #a23ae3,
+  0 0 10px #a23ae3;
+
 }
 
+
+/* MOBILE VIEW */
+
+@media(max-width:720px){
+
+  img{
+    max-width:90%;
+  }
+
+  button{
+
+    width:80%;
+    font-size:20px;
+    height:50px;
+
+  }
+
+}
+
+
+/* GRADIENT ANIMATION */
+
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
+
+  0%{
+    background-position:0% 50%;
   }
-  50% {
-    background-position: 100% 50%;
+
+  50%{
+    background-position:100% 50%;
   }
-  100% {
-    background-position: 0% 50%;
+
+  100%{
+    background-position:0% 50%;
   }
+
 }
